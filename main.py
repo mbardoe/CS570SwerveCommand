@@ -3,10 +3,10 @@ import math
 from pose2d import Pose2D
 
 
-def SwerveCommand(pose1: Pose2D, pose2: Pose2D, max_linear_speed, max_angular_speed, track_width):
+def SwerveCommand(origin: Pose2D, target: Pose2D, max_linear_speed, max_angular_speed, track_width):
     """"SwerveCommmand takes in 2 poses and returns a tuple of time, and 4 directions for the 4 wheels
     of a swerve drive robot. """
-    
+
 
     return time, left_front_direction, right_front_direction, left_back_direction, right_back_direction
 

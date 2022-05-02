@@ -4,7 +4,7 @@ from pose2d import Pose2D
 
 
 def SwerveCommand(origin: Pose2D, target: Pose2D, max_linear_speed, max_angular_speed, track_width, speed):
-    """"SwerveCommmand takes in 2 poses and returns a tuple of time, and 4 directions for the 4 wheels
+    """"SwerveCommmand takes in 2 poses and returns a tuple of time, and 4 directions and speeds for the 4 wheels
     of a swerve drive robot. The speed is a percentage of the max speed to go."""
 
 

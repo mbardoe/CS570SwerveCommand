@@ -22,7 +22,7 @@ def SwerveCommand(origin: Pose2D, target: Pose2D, max_linear_speed, max_angular_
     twist_slow_down = time_twist / time
 
     movement_vector = [speed * linear_slow_down * math.cos(movement_angle),
-                       speed * linear_slow_down * math.sin(movement_angle)]
+                       speed * linear_slow_down *  math.sin(movement_angle)]
 
     left_front_twist = [speed * twist_slow_down * math.cos(5 * math.pi / 4),
                         speed * twist_slow_down * math.sin(5 * math.pi / 4)]
@@ -52,6 +52,19 @@ def direction_and_speed(horizontal_speed, vertical_speed):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    pose1 = Pose2D(4, 1, 0)
-    pose2 = Pose2D(5, 2, 1)
-    print(SwerveCommand(pose1, pose2, math.pi, math.sqrt(2) * math.pi))
+    pose1 = Pose2D(4, 2, 0)
+    pose2 = Pose2D(5, 1, 1)
+    print(SwerveCommand(pose1, pose2, math.pi, math.sqrt(2) * math.pi, 1, .3))
+
+#Answers should be:
+# time=1.5005
+# left_front_direction =-1.249045
+# right_front_direction = -0.785398
+# left_back_direction = -0.785398
+# right_back_direction = -0.3217505
+# the speed numbers are different from our calculations in class because we now report them as a fraction of the max.
+# left_front_speed = 0.33541019  # the speed numbers are different from our calculations in class be
+# right_front_speed = 0.15
+# left_back_speed = 0.45
+# right_back_speed = 0.335410196
+

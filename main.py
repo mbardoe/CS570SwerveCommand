@@ -54,7 +54,7 @@ def direction_and_speed(horizontal_speed, vertical_speed):
 if __name__ == '__main__':
     pose1 = Pose2D(4, 2, 0)
     pose2 = Pose2D(5, 1, 1)
-    print(SwerveCommand(pose1, pose2, math.pi, math.sqrt(2) * math.pi, 1, .3))
+    print(SwerveCommand(pose1, pose2, math.pi, math.sqrt(2) * math.pi, .3))
 
 #Answers should be:
 # time=1.5005

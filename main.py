@@ -8,7 +8,8 @@ def SwerveCommand(origin: Pose2D, target: Pose2D, max_linear_speed, max_angular_
     of a swerve drive robot. The speed is a percentage of the max speed to go."""
 
 
-    return time, left_front_direction, right_front_direction, left_back_direction, right_back_direction
+    return time, left_front_direction, right_front_direction, left_back_direction, right_back_direction, \
+           left_front_speed, right_front_speed, left_back_speed, right_back_speed
 
 
 # Press the green button in the gutter to run the script.
